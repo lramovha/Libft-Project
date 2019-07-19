@@ -1,30 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lramovha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/07/15 13:22:18 by lramovha          #+#    #+#             */
-/*   Updated: 2019/07/19 11:10:04 by lramovha         ###   ########.fr       */
+/*   Created: 2019/07/19 10:34:47 by lramovha          #+#    #+#             */
+/*   Updated: 2019/07/19 11:11:02 by lramovha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_bzero(void *s, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	unsigned char	*p;
-	size_t			i;
-
-	i = 0;
-	p = (unsigned char)s;
-	while (n--)
+	size_t	i;
+	unsigned char p;
+	unsigned char p2;
+	
+	i =  0;
+	p = (unsigned char)s1;
+	p2 = (unsigned char)s2;
+	while (i < n && s1[i] == s2[i])
 	{
-		s[i] = 0;
 		i++;
 	}
+	if (i == n)
+		return (0);
+	else
+		return (s1[i] - s2[i])
+
 }
 
-int	main()
+int main()
 {
-	int b[] = "lasy";
+	char	s1[] = "Hello";
+   	char	s2[] = "Hello";
+	int		n = 3;
+	ft_memcmp(s1, s2, n);
 }

@@ -1,30 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lramovha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/07/15 13:22:18 by lramovha          #+#    #+#             */
-/*   Updated: 2019/07/19 11:10:04 by lramovha         ###   ########.fr       */
+/*   Created: 2019/07/19 12:02:23 by lramovha          #+#    #+#             */
+/*   Updated: 2019/07/19 12:03:10 by lramovha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_bzero(void *s, size_t n)
+char	*ft_strrchr(const char *s, int c)
 {
-	unsigned char	*p;
-	size_t			i;
 
-	i = 0;
-	p = (unsigned char)s;
-	while (n--)
-	{
-		s[i] = 0;
-		i++;
-	}
-}
-
-int	main()
-{
-	int b[] = "lasy";
 }
