@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*memccpy(void *dst, const void *src, int c, size_t n)
+void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
 	size_t				i;
 	unsigned char		*p;
@@ -30,9 +30,11 @@ void	*memccpy(void *dst, const void *src, int c, size_t n)
 
 int	main()
 {
-	char	src[] = "hello";
-	void	dst[];
-	int		c = 120;
-	size_t	n = 3;
-	char ans = memccpy(dst,src,c,n);
+	const char	src[] = "hellolaaa";
+	char	dst[];
+	char	c = "l";
+	size_t	n;
+	n = strlen(src);
+	char ans = ft_memccpy(dst,src,c,n);
+	printf("The Answer is %s\n", ans);
 }

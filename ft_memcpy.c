@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*memcpy(void *restrict dst, const void *restrict src, size_t n)
+void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
 {
 	unsigned char		*p;
 	const unsigned char	*p2;
@@ -28,5 +28,10 @@ void	*memcpy(void *restrict dst, const void *restrict src, size_t n)
 
 int	main()
 {
-
+	const char src[] = "Helloooo";
+	char	dst[];
+	strcpy(dst, "Hello");
+	printf("before memcpy dst = %s\n", dst);
+	ft_memcpy(dst, src, 9);
+	printf("After memcpy dst = %s\n", dst);
 }

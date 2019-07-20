@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*memchr(const void *s, int c, size_t n)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
 	unsigned const char	*p;
 	unsigned char		*p2;
@@ -21,9 +21,16 @@ void	*memchr(const void *s, int c, size_t n)
 	p2 = (unsigned char*)c;
 	while (i < n)
 	{
-		if (p[i] == p2)
+		if (p[i] == p2[i])
 			return ((void*)&p[i]);
 		++i;
 	}
 	return (NULL);
+}
+
+int	main()
+{
+	char	s[] = "Hellolaa":
+	char	c[] = "o";
+	ft_memchr(s, c);
 }
