@@ -1,30 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lramovha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/07/15 13:22:18 by lramovha          #+#    #+#             */
-/*   Updated: 2019/07/19 11:10:04 by lramovha         ###   ########.fr       */
+/*   Created: 2019/07/19 11:56:06 by lramovha          #+#    #+#             */
+/*   Updated: 2019/07/19 11:57:43 by lramovha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_bzero(void *s, size_t n)
+size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize)
 {
-	unsigned char	*p;
-	size_t			i;
 
-	i = 0;
-	p = (unsigned char)s;
-	while (n--)
-	{
-		s[i] = 0;
-		i++;
-	}
-}
-
-int	main()
-{
-	int b[] = "lasy";
 }

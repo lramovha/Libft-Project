@@ -1,30 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lramovha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/07/15 13:22:18 by lramovha          #+#    #+#             */
-/*   Updated: 2019/07/19 11:10:04 by lramovha         ###   ########.fr       */
+/*   Created: 2019/07/19 11:14:20 by lramovha          #+#    #+#             */
+/*   Updated: 2019/07/19 11:45:34 by lramovha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_bzero(void *s, size_t n)
+size_t	ft_strlen(const char *s)
 {
-	unsigned char	*p;
-	size_t			i;
+	size_t	i;
 
 	i = 0;
-	p = (unsigned char)s;
-	while (n--)
+	while (s[i] == '\0')
 	{
-		s[i] = 0;
 		i++;
 	}
+	return (i);
 }
 
-int	main()
+int main()
 {
-	int b[] = "lasy";
+	char	s[] = "Hello";
+	ft_strlen(s);
 }
