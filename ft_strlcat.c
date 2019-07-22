@@ -6,11 +6,11 @@
 /*   By: lramovha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/19 11:56:06 by lramovha          #+#    #+#             */
-/*   Updated: 2019/07/19 11:57:43 by lramovha         ###   ########.fr       */
+/*   Updated: 2019/07/22 13:37:20 by lramovha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize)
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-
+	
 }

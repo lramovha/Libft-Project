@@ -6,7 +6,7 @@
 /*   By: lramovha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/19 11:50:12 by lramovha          #+#    #+#             */
-/*   Updated: 2019/07/19 11:52:10 by lramovha         ###   ########.fr       */
+/*   Updated: 2019/07/22 12:22:58 by lramovha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,4 +26,14 @@ char	*ft_strncpy(char *dst, const char *src, size_t n)
 		 i++;
 	}
 	return (dst);
+}
+
+int	main()
+{
+	char	src[] = "HelloWord";
+	char	dst[];
+
+	ft_strncpy(dst, src, 5);
+	printf("The new string is %s\n", dst);
+	return (0);
 }
