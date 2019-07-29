@@ -12,5 +12,24 @@
 
 char	*ft_strchr(const char *s, int c)
 {
+	int	i;
 
+	i = 0;
+	while (s[i] != (char)c)
+	{
+		if (!s[i++])
+			return (NULL);
+	}
+	return ((char *)&s[i]);
+}
+
+int	main()
+{
+	const char	s[] = "HelloWorld";
+	char	c = 'w';
+
+	printf("This is the string without ft_strchr : %s\n", s);
+	ft_strchr(s, c);
+	printf("This is the string with ft_strchr : %s\n", s);
+	return (0);
 }
